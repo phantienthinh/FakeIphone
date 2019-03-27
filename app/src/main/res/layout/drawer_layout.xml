@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".activity.MainActivity">
+
+
+    <LinearLayout
+            android:id="@+id/llToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/background"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+        <TextView
+                android:textSize="17sp"
+                android:fontFamily="@font/sanfranciscom_medium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Fake call"
+                android:textColor="@color/textColor"
+        />
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_home">
+
+        <FrameLayout
+                android:id="@+id/framelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <RelativeLayout
+                    android:id="@+id/rl_group1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:id="@+id/rlNamePhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@color/background"
+                        android:orientation="horizontal"
+
+                >
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical"
+                    >
+
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:weightSum="10"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:paddingLeft="@dimen/_20sdp"
+                                android:paddingRight="@dimen/_30sdp"
+                        >
+
+                            <TextView
+                                    android:fontFamily="@font/sanfranciscotext_regular"
+                                    android:textSize="16sp"
+                                    android:layout_weight="2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Name"
+                                    android:textColor="@color/textColor"
+                            />
+
+                            <EditText
+                                    android:maxLength="20"
+                                    android:hint="Unknow"
+                                    android:visibility="invisible"
+                                    android:id="@+id/edtNameContact"
+                                    android:background="@null"
+                                    android:gravity="center|left"
+                                    android:textColor="@color/colorEditText"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    android:layout_weight="7"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"/>
+                            <RadioButton
+                                    android:id="@+id/radName"
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"/>
+                        </LinearLayout>
+                        <LinearLayout
+                                android:gravity="right"
+                                android:weightSum="10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            <ImageView
+                                    android:layout_weight="7.7"
+                                    android:background="@drawable/line"
+                                    android:layout_width="0dp"
+                                    android:layout_height="1dp"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                                android:weightSum="10"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:paddingLeft="@dimen/_20sdp"
+                                android:paddingRight="@dimen/_30sdp"
+                        >
+
+                            <TextView
+                                    android:fontFamily="@font/sanfranciscotext_regular"
+                                    android:textSize="16sp"
+                                    android:layout_weight="2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Phone"
+                                    android:textColor="@color/textColor"
+                            />
+
+                            <EditText
+                                    android:maxLength="20"
+                                    android:hint="Unknow"
+                                    android:inputType="phone"
+                                    android:visibility="invisible"
+                                    android:id="@+id/edtPhoneContact"
+                                    android:background="@null"
+                                    android:gravity="center|left"
+                                    android:textColor="@color/colorEditText"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="16sp"
+                                    android:layout_weight="7"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"/>
+                            <RadioButton
+                                    android:id="@+id/radPhone"
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                        android:id="@+id/rdGroupContac"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:paddingRight="@dimen/_20sdp"
+                        android:layout_below="@id/rlNamePhone"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                    <!--<ImageView-->
+                    <!---->
+                    <!--android:layout_width="@dimen/_50sdp"-->
+                    <!--android:layout_height="@dimen/_50sdp"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:src="@drawable/image_icon"/>-->
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                            android:scaleType="centerCrop"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/imv_Contacts"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:src="@drawable/image_icon"
+                            app:civ_border_width="1dp"
+                            app:civ_border_color="#03A9F4"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:paddingRight="@dimen/_15sdp"
+                        android:paddingLeft="@dimen/_30sdp"
+                        android:id="@+id/rlGroupVibrate"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_below="@id/rdGroupContac"
+                        android:background="@color/background"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:fontFamily="@font/sanfranciscotext_regular"
+                            android:textColor="@color/textColor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_40sdp"
+                            android:gravity="center|left"
+                            android:text="Vibrate"
+                            android:textSize="16sp"
+                    />
+                    <!--android:button="@drawable/custom_swich"-->
+
+
+                    <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/swVibrate"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="left|center"
+                            android:background="@drawable/custom_swich"
+                            android:thumb="@null"/>
+
+                </RelativeLayout>
+                <ImageView
+                        android:id="@+id/tvLineVibrate"
+                        android:paddingLeft="@dimen/_30sdp"
+                        android:src="@drawable/line"
+                        android:layout_below="@id/rlGroupVibrate"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                <RelativeLayout
+                        android:background="@color/background"
+                        android:id="@+id/rlGroupVoice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvLineVibrate"
+                        android:paddingLeft="@dimen/_30sdp"
+                        android:paddingRight="@dimen/_20sdp"
+                        android:orientation="horizontal">
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:weightSum="10"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp">
+
+                        <TextView
+                                android:fontFamily="@font/sanfranciscotext_regular"
+                                android:textColor="@color/textColor"
+                                android:layout_weight="2.5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="Voice"
+                                android:textSize="16sp"
+                        />
+
+                        <TextView
+                                android:fontFamily="@font/sanfranciscotext_regular"
+                                android:id="@+id/tvNameVoice"
+                                android:singleLine="true"
+                                android:layout_weight="5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="Name bài hát"
+                                android:textSize="14sp"
+                        />
+                    </LinearLayout>
+
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/right"/>
+
+                </RelativeLayout>
+
+                <ImageView
+                        android:id="@+id/tvLineVoice"
+                        android:paddingLeft="@dimen/_30sdp"
+                        android:src="@drawable/line"
+                        android:layout_below="@id/rlGroupVoice"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                <RelativeLayout
+                        android:background="@color/background"
+                        android:id="@+id/rlGroupRingtone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvLineVoice"
+                        android:paddingLeft="@dimen/_30sdp"
+                        android:paddingRight="@dimen/_20sdp"
+                        android:orientation="horizontal">
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:weightSum="10"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp">
+
+                        <TextView
+                                android:fontFamily="@font/sanfranciscotext_regular"
+                                android:textColor="@color/textColor"
+                                android:layout_weight="2.5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="Ringtone"
+                                android:textSize="16sp"
+                        />
+
+                        <TextView
+                                android:fontFamily="@font/sanfranciscotext_regular"
+                                android:id="@+id/tvRingTone"
+                                android:singleLine="true"
+                                android:layout_weight="5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="Name bài hát"
+                                android:textSize="14sp"
+                        />
+                    </LinearLayout>
+
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/right"/>
+
+                </RelativeLayout>
+                <ImageView
+                        android:id="@+id/tvLineRingtone"
+                        android:paddingLeft="@dimen/_30sdp"
+                        android:src="@drawable/line"
+                        android:layout_below="@id/rlGroupRingtone"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                <RelativeLayout
+                        android:id="@+id/rlDelay"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_below="@id/tvLineRingtone"
+                        android:background="@color/background"
+                        android:paddingLeft="@dimen/_30sdp"
+                        android:paddingRight="@dimen/_20sdp"
+                        android:orientation="horizontal">
+
+                    <LinearLayout
+                            android:weightSum="10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:fontFamily="@font/sanfranciscotext_regular"
+                                android:layout_weight="2.5"
+                                android:textColor="@color/textColor"
+                                android:singleLine="true"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="Delay"
+                                android:textSize="16sp"
+                        />
+
+                        <TextView
+                                android:fontFamily="@font/sanfranciscotext_regular"
+                                android:layout_weight="5"
+                                android:singleLine="true"
+                                android:id="@+id/tvTime"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="f"
+                                android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/right"/>
+
+                </RelativeLayout>
+                <ImageView
+                        android:id="@+id/tvLineDeley"
+                        android:paddingLeft="@dimen/_30sdp"
+                        android:src="@drawable/line"
+                        android:layout_below="@id/rlDelay"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                <RelativeLayout
+                        android:paddingRight="@dimen/_20sdp"
+                        android:paddingLeft="@dimen/_30sdp"
+                        android:id="@+id/rlWallpaper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvLineDeley"
+                        android:background="@color/background"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:fontFamily="@font/sanfranciscotext_regular"
+                            android:textColor="@color/textColor"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:gravity="center|left"
+                            android:text="Wallpaper"
+                            android:textSize="16sp"
+                    />
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/right"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                    android:clickable="false"
+                    android:id="@+id/rl_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/framelayout">
+
+            <Button
+                    android:fontFamily="@font/sanfranciscom_medium"
+                    android:textColor="@color/colorEditText"
+                    android:id="@+id/btn_Start_Call"
+                    android:background="@color/background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Start Call"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

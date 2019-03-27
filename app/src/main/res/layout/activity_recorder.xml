@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:wave="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+
+    <com.john.waveview.WaveView
+            android:id="@+id/wave_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2E848C"
+            wave:above_wave_color="@android:color/white"
+            wave:blow_wave_color="@android:color/white"
+            wave:progress="30"
+            wave:wave_height="little"
+            wave:wave_hz="normal"
+            wave:wave_length="middle"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+            <!--<ImageView-->
+                    <!--android:padding="@dimen/_5sdp"-->
+                    <!--android:src="@drawable/ic_close"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:layout_width="@dimen/_35sdp"-->
+                    <!--android:layout_height="@dimen/_35sdp"/>-->
+            <!--<ImageView-->
+                    <!--android:padding="@dimen/_5sdp"-->
+                    <!--android:src="@drawable/ic_check"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:layout_width="@dimen/_35sdp"-->
+                    <!--android:layout_height="@dimen/_35sdp"/>-->
+            <TextView
+                    android:id="@+id/tvNameRecord"
+                    android:fontFamily="@font/sanfranciscotext_regular"
+                    android:textColor="@color/background"
+                    android:textSize="25sp"
+                    android:layout_centerInParent="true"
+                    android:text="NameRecorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+            <TextView
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_100sdp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/tvRecorder"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/sanfranciscotext_regular"
+                    android:textColor="@color/background"
+                    android:text="Recording"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <Chronometer
+                    android:id="@+id/chronometer"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/tvRecorder"
+                    android:textSize="45sp"
+                    android:fontFamily="@font/sanfranciscotext_regular"
+                    android:textColor="@color/background"
+                    android:text="00:00:00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="@dimen/_40sdp"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            <ImageView
+                    android:id="@+id/ivClose"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_close_white_48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"/>
+            <at.markushi.ui.CircleButton
+                    android:id="@+id/recorder"
+                    app:cb_color="#FF001E"
+                    app:cb_pressedRingWidth="8dip"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_microphone"
+                    android:layout_centerInParent="true"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"/>
+                <ImageView
+                    android:clickable="false"
+                    android:id="@+id/ivDone"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_check_white_48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="@dimen/_40sdp"
+    xmlns:foo="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:background="@color/background"
+        android:id="@+id/rlVoice"
+        android:paddingRight="@dimen/_30sdp"
+        android:paddingLeft="@dimen/_25sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+                android:fontFamily="@font/sanfranciscotext_regular"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/tvNameSong"
+            android:textSize="16sp"
+            android:gravity="center|left"
+            android:text="@string/none"
+            android:singleLine="true"
+            android:textColor="@color/textColor"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/ivTickVoice"
+            android:padding="@dimen/_8sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/tick"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            />
+
+    </RelativeLayout>
+    <ImageView
+        android:paddingLeft="@dimen/_15sdp"
+        android:src="@drawable/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</LinearLayout>

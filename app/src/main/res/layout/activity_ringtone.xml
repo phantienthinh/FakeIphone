@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_home"
+        tools:context=".activity.RingtoneActivity">
+
+    <RelativeLayout
+            android:id="@+id/rlTitleRingtone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/background"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:id="@+id/llBackRingtone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/back"/>
+
+            <TextView
+                    android:fontFamily="@font/sanfranciscotext_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/setting"
+                    android:textColor="@color/colorEditText"
+                    android:textSize="16sp"
+            />
+        </LinearLayout>
+
+        <TextView
+                android:fontFamily="@font/sanfranciscom_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/ringtone"
+                android:textColor="@color/textColor"
+                android:textSize="17sp"
+        />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingLeft="@dimen/_30sdp"
+            android:id="@+id/rlOnOffRingtone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:orientation="horizontal">
+
+        <TextView
+                android:fontFamily="@font/sanfranciscotext_regular"
+                android:textColor="@color/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:gravity="center|left"
+                android:text="@string/ringtone"
+                android:textSize="16sp"
+        />
+
+        <android.support.v7.widget.SwitchCompat
+                android:id="@+id/swRingtone"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="left|center"
+                android:background="@drawable/custom_swich"
+                android:thumb="@null"/>
+
+    </RelativeLayout>
+    <TextView
+            android:fontFamily="@font/sanfranciscotext_regular"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="left|bottom"
+            android:text="@string/select_ringtone"
+            android:textSize="16sp"
+    />
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcl_RingTone"
+            android:background="@color/background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

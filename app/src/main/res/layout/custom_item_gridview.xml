@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/ivGridView"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_180sdp"/>
+    <ImageView
+            android:id="@+id/ivTickWallpaper"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/tick_wallpaper"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"/>
+
+</FrameLayout>

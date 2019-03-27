@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:gravity="center"
+
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:padding="10dp"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+        <TextView
+                android:fontFamily="@font/sanfranciscom_medium"
+                android:id="@+id/tvTitleNameRecord"
+                android:text="@string/enter_recording_name"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <EditText
+                android:hint="Name Recording"
+                android:textColor="@color/colorEditText"
+                android:id="@+id/edt_Name_Record"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/tvTitleNameRecord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:textColor="@color/colorEditText"
+                android:fontFamily="@font/sanfranciscotext_regular"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/btn_Start_Record"
+                android:layout_below="@id/edt_Name_Record"
+                android:layout_alignParentRight="true"
+                android:text="Ok"
+                android:background="#fff"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_30sdp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+
+        <TextView
+            android:id="@+id/tv_Name_Voice_Recorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="abc"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rlProgressBar"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tv_Name_Voice_Recorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlTimeRecorder"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/rlProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvTimeRecorder"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:text="00:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/rlTimeRecorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvCancelRecorder"
+                android:gravity="center"
+                android:text="CANCEL"
+                android:layout_width="60dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tvSaveRecorder"
+                android:layout_alignParentRight="true"
+                android:text="SAVE"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

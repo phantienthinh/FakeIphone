@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.WallpaperActivity">
+
+
+    <RelativeLayout
+    android:id="@+id/rlTitleWallpaper"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/background"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/llBackWallpaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+                android:fontFamily="@font/sanfranciscotext_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/setting"
+            android:textColor="@color/colorEditText"
+            android:textSize="16sp"
+             />
+    </LinearLayout>
+
+        <TextView
+                android:fontFamily="@font/sanfranciscotext_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Wallpaper"
+        android:textColor="@color/textColor"
+        android:textSize="17sp"
+         />
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcl_Wallpaper"
+        android:horizontalSpacing="@dimen/_5sdp"
+        android:verticalSpacing="@dimen/_5sdp"
+        android:background="@drawable/bg_home"
+        android:layout_below="@id/rlTitleWallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

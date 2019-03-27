@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_home"
+>
+    <RelativeLayout
+            android:id="@+id/rlTitleVoice"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/background"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:id="@+id/llBackVoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/back"/>
+
+            <TextView
+                    android:fontFamily="@font/sanfranciscotext_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/setting"
+                    android:textColor="@color/colorEditText"
+                    android:textSize="16sp"
+            />
+        </LinearLayout>
+
+        <TextView
+                android:fontFamily="@font/sanfranciscom_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/voice"
+                android:textColor="@color/textColor"
+                android:textSize="17sp"
+        />
+
+        <TextView
+                android:fontFamily="@font/sanfranciscotext_regular"
+                android:id="@+id/tvRecorderVoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="20dp"
+                android:text="Record"
+                android:textColor="@color/colorEditText"
+                android:textSize="17sp"
+        />
+
+
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/tvSelectVoice"
+            android:layout_below="@+id/rlTitleVoice"
+            android:fontFamily="@font/sanfranciscotext_regular"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="left|bottom"
+            android:text="Select Voice"
+            android:textSize="16sp"
+    />
+    <android.support.v7.widget.RecyclerView
+            android:divider="@null"
+            android:background="@color/background"
+            android:dividerHeight="0dp"
+            android:layout_below="@id/tvSelectVoice"
+            android:id="@+id/rcl_Song"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp">
+
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+            android:id="@+id/tvSelectVoiceRecorder"
+            android:layout_below="@+id/rcl_Song"
+            android:fontFamily="@font/sanfranciscotext_regular"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="left|bottom"
+            android:text="Select Voice Recorder"
+            android:textSize="16sp"
+    />
+
+    <android.support.v7.widget.RecyclerView
+            android:divider="@null"
+            android:background="@color/background"
+            android:dividerHeight="0dp"
+            android:layout_below="@id/tvSelectVoiceRecorder"
+            android:id="@+id/rcl_VoiceRecerder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

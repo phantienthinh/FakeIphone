@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp">
+
+        <TextView
+            android:id="@+id/tvContacts"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/contacts"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+       <TextView
+           android:background="@color/colorAccent"
+           android:layout_width="match_parent"
+           android:layout_height="1dp" />
+        <TextView
+            android:id="@+id/tvPolice"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/police"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <TextView
+           android:background="@color/colorAccent"
+           android:layout_width="match_parent"
+           android:layout_height="1dp" />
+        <TextView
+            android:id="@+id/tvUnknown"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/unknown"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <TextView
+           android:background="@color/colorAccent"
+           android:layout_width="match_parent"
+           android:layout_height="1dp" />
+        <TextView
+            android:id="@+id/tvGirlfriend"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/girlfriend"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <TextView
+           android:background="@color/colorAccent"
+           android:layout_width="match_parent"
+           android:layout_height="1dp" />
+        <TextView
+            android:id="@+id/tvBoyfriend"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/boyfriend"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+    </LinearLayout>
+
+</LinearLayout>

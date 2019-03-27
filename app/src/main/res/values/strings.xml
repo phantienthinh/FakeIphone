@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">FakeCalliPhoneStyle</string>
+    <string name="hint">Hint</string>
+    <string name="complete_action_using">Sellect image</string>
+    <string name="screen_on">Screen On:</string>
+    <string name="screen_off">Screen Off:</string>
+    <string name="contacts">Contacts</string>
+    <string name="police">Police</string>
+    <string name="unknown">Unknown</string>
+    <string name="girlfriend">Girlfriend</string>
+    <string name="boyfriend">Boyfriend</string>
+    <string name="delay">Delay</string>
+    <string name="setting">Setting</string>
+    <string name="none">None</string>
+    <string name="_3_seconds_late">3 Seconds Late</string>
+    <string name="_10_seconds_late">10 Seconds Late</string>
+    <string name="_1_minute_late">1 Minute Late</string>
+    <string name="_2_minute_late">2 Minute late</string>
+    <string name="_5_minute_late">5 Minute Late</string>
+    <string name="_8_minute_late">8 Minute Late</string>
+    <string name="_12_minute_late">12 Minute Late</string>
+    <string name="_20_minute_late">20 Minute Late</string>
+    <string name="_30_seconds_late">30 Seconds Late</string>
+    <string name="voice">Voice</string>
+    <string name="ringtone">Ringtone</string>
+    <string name="select_ringtone">Select Ringtone</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="_1_hour_late">1 Hour Late</string>
+    <string name="remind_me">Remind Me</string>
+    <string name="facetime">Face Time</string>
+    <string name="mute">Mute</string>
+    <string name="keypad">Keypad</string>
+    <string name="enter_recording_name">Enter recording name:</string>
+    <string name="call_declined">call declined</string>
+    <string name="close_recorder">You need to stop recording before canceling</string>
+    <string name="save_recorder">You need to stop recording before saving</string>
+</resources>
